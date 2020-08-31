@@ -34,8 +34,8 @@ def call() {
 
 def push(commitMessage, branch) {
     pipelinePlaceholders = PipelinePlaceholders.getInstance()
-    sh "git config --global user.email 'krishna.aradhye@mindtree.com'"
-    sh "git config --global user.name 'KrishnaAradhye'"
+    sh "git config --global user.email 'nagendra.ca2@mindtree.com'"
+    sh "git config --global user.name 'M1053737'"
     sh "git remote set-url origin ${pipelinePlaceholders.getSshUrlToRepo()}"
     sh "git add ."
     sh "git commit -m '${commitMessage}'"
