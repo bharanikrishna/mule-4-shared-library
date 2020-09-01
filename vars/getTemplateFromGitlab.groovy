@@ -5,5 +5,5 @@ def call(String template) {
     def url = "https://github.com/M1053737/rest-template.git"
     
     git url: url // credentialsId: Constants.GITLAB_CREDENTIALS_ID,
-    sh 'rm -r .git'
+    bat 'rm -r .git'
 }
